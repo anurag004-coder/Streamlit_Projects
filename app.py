@@ -4,7 +4,7 @@ import streamlit as st
 from pathlib import Path
 
 
-MODEL_PATH = Path(r"C:\Users\anura\OneDrive\Desktop\trained_model.sav")
+MODEL_PATH = Path(__file__).with_name("trained_model.sav")
 
 
 @st.cache_resource
